@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EVDS Etiquetas</title>
+<meta name="description" content="Monte as etiquetas dos disjuntores, a tabela da porta e a advertência do quadro elétrico, na medida certa para imprimir.">
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="tela"></div>
+<dialog id="folha" aria-labelledby="folha-titulo"></dialog>
+<div id="recado" role="status" aria-live="polite"></div>
+<input type="file" id="arquivo" accept=".json,application/json" hidden>
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/norma.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/icones.js"></script>
+<script src="js/desenho.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
