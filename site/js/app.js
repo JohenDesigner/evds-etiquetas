@@ -164,7 +164,7 @@
     abrir('Ajustes do quadro', `<form id="form-conf" class="miolo" style="padding:0;overflow:visible">
       ${campo('Nome ou endereço da obra', texto('nome', o.nome, 60))}
       ${campo('Eletricista responsável', texto('responsavel', o.responsavel, 60))}
-      ${campo('Contato <em>(telefone, CFT ou CREA)</em>', texto('contato', o.contato, 60))}
+      ${campo('Telefone <em>(opcional)</em>', texto('contato', o.contato, 60))}
       ${campo('Data', `<input type="date" name="data" value="${o.data}">`)}
       <div class="dupla">${campo('Largura do módulo (mm)', texto('larg', virg(o.larg), 5, 'inputmode="decimal"'))}
         ${campo('Altura da etiqueta (mm)', texto('alt', virg(o.alt), 5, 'inputmode="decimal"'))}</div>

@@ -175,7 +175,7 @@
     const e = w / 150, e2 = Math.max(.85, e), rh = 6.4 * e2, tx = 2.9 * e2, cols = [w * .14, w * .52, w * .17, w * .17];
     const wl = 27 * e, hl = logoAlt(wl), xt = x + wl + 4, wt = w - wl - 4;
     const tit = encaixar('Quadro de distribuição — identificação dos circuitos', 4.2 * e, 2.2, true, wt, 1);
-    const partes = [['Local', q.nome], ['Responsável', q.responsavel], ['Contato', q.contato], ['Data', q.data.split('-').reverse().join('/')]]
+    const partes = [['Local', q.nome], ['Responsável', q.responsavel], ['Telefone', q.contato], ['Data', q.data.split('-').reverse().join('/')]]
       .filter(m => limpo(m[1])).map(m => `${m[0]}: ${limpo(m[1])}`).join(' • ');
     const meta = quebrar(partes, tx * .85, false, wt), hCab = Math.max(hl, 5.5 * e2 + meta.length * tx * 1.2) + 2 + rh;
     let topo;
